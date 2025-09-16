@@ -1,8 +1,9 @@
-
 # PyLib
 
 **Write Minecraft Forge 1.16.5 content in Python instead of Java.**
 This repository contains everything you need to build and package *pymods* that run on top of the PyLib loader.
+
+⚡ **Fabric support coming soon** – PyLib aims to support both Forge and Fabric loaders with the same Python code.
 
 ---
 
@@ -14,11 +15,26 @@ This repository contains everything you need to build and package *pymods* that 
 
 ---
 
+## Roadmap
+
+| Feature                       | Status                          |
+| ----------------------------- | ------------------------------- |
+| **Forge 1.16.5**              | ✅ Stable                        |
+| **Fabric 1.16.5**             | 🔄 In development               |
+| **Forge 1.18.x**              | 🔄 Planned                      |
+| **Fabric 1.18.x**             | 🔄 Planned                      |
+| **Forge 1.20.x**              | 🔄 Planned                      |
+| **Fabric 1.20.x**             | 🔄 Planned                      |
+| **Future Minecraft versions** | 🚀 Will follow as PyLib evolves |
+
+---
+
 ## Requirements
 
 * Python **3.9+** (any CPython that GraalVM can emulate)
 * `pip` (for installing PyMod Essentials)
 * A Minecraft Forge **1.16.5** instance with the PyLib mod installed
+* *(Optional, future)* Fabric loader support will be added soon
 
 ---
 
@@ -37,8 +53,6 @@ If you downloaded a wheel file (`.whl`) from [Releases](../../releases), install
 ```bash
 pip install dist/pylib_essentials-<version>-py3-none-any.whl
 ```
-
-> Replace `<version>` with the actual version number of the release.
 
 ---
 
@@ -118,7 +132,7 @@ pip install dist/pylib_essentials-<version>-py3-none-any.whl
    pymod-compiler
    ```
 
-   This packages `src/` and `assets/` with an auto-generated `mod_info.json`, producing:
+   Produces:
 
    ```
    build/<modid>-<version>.pymod
@@ -149,7 +163,7 @@ The Java side exports multiple registries and a utility helper for your mod id.
 
 ### Items
 
-Register simple `net.minecraft.item.Item` instances:
+Register simple items:
 
 ```python
 pylib.registries.items.register(
@@ -162,7 +176,6 @@ pylib.registries.items.register(
 ### Blocks
 
 Creates a block plus its item form.
-Use `creative_tab` to choose where it appears in the inventory.
 
 ### Potions
 
@@ -178,17 +191,12 @@ Attach `PyTileEntity` to a registered block for persistent NBT state.
 
 ### Entities
 
-Spawn data-driven creatures with:
-
-* Size/classification
-* Attributes (`max_health`, `attack_damage`, etc.)
-* AI goals (`"melee_attack"`, `"target_nearest_player"`, etc.)
-* Optional spawn egg colors & biome spawn placements
+Spawn data-driven creatures with attributes, AI goals, spawn eggs, and biome spawns.
 
 ### Dimensions
 
 Queue fully configured custom dimensions.
-PyLib auto-generates JSON files (`dimension_type`, `dimension`, `biome`) and writes a full datapack.
+PyLib auto-generates the JSON files and writes a full datapack.
 
 ---
 
@@ -207,4 +215,9 @@ PyLib auto-generates JSON files (`dimension_type`, `dimension`, `biome`) and wri
 3. Launch Forge with PyLib enabled
 4. Watch the log for `Successfully executed Pymod` messages
 
-Do you also want me to include **Gradle build instructions for the Java Forge mod (PyLib itself)**, or should the README only focus on the Python side (`pylib-essentials`)?
+---
+
+🎉 **Happy modding with Python in Minecraft!**
+*(Fabric and newer Minecraft version support are on the way — stay tuned!)*
+
+Do you want me to make the **roadmap table version-specific** (like Forge 1.16.5 = ✅, Forge 1.18.x = planned, Fabric 1.20.x = planned), or keep it more **generic** so you don’t need to update it every time a new Minecraft version drops?
