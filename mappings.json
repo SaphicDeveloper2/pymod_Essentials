@@ -11,32 +11,8 @@
     "BREWING": "brewing",
     "MATERIALS": "materials"
   },
-  "enchantment_rarities": {
-    "COMMON": "common",
-    "UNCOMMON": "uncommon",
-    "RARE": "rare",
-    "VERY_RARE": "very_rare"
-  },
-  "enchantment_categories": {
-    "ARMOR": "armor",
-    "ARMOR_FEET": "armor_feet",
-    "ARMOR_LEGS": "armor_legs",
-    "ARMOR_CHEST": "armor_chest",
-    "ARMOR_HEAD": "armor_head",
-    "WEAPON": "weapon",
-    "DIGGER": "digger",
-    "FISHING_ROD": "fishing_rod",
-    "TRIDENT": "trident",
-    "BREAKABLE": "breakable",
-    "BOW": "bow",
-    "WEARABLE": "wearable",
-    "CROSSBOW": "crossbow",
-    "VANISHABLE": "vanishable"
-  },
   "item_properties": {
     "CREATIVE_TAB": "creative_tab",
-    "TEXTURE": "texture",
-    "MODEL": "model",
     "MAX_STACK_SIZE": "max_stack_size",
     "RARITY": "rarity"
   },
@@ -46,81 +22,75 @@
     "RARE": "rare",
     "EPIC": "epic"
   },
-  "vanilla_items": {
-    "STONE": "minecraft:stone",
-    "DIRT": "minecraft:dirt",
-    "COBBLESTONE": "minecraft:cobblestone",
-    "OAK_PLANKS": "minecraft:oak_planks",
-    "SAND": "minecraft:sand",
-    "GRAVEL": "minecraft:gravel",
-    "GOLD_ORE": "minecraft:gold_ore",
-    "IRON_ORE": "minecraft:iron_ore",
-    "COAL_ORE": "minecraft:coal_ore",
-    "OAK_LOG": "minecraft:oak_log",
-    "GLASS": "minecraft:glass",
-    "LAPIS_BLOCK": "minecraft:lapis_block",
-    "SANDSTONE": "minecraft:sandstone",
-    "IRON_SWORD": "minecraft:iron_sword",
-    "DIAMOND_SWORD": "minecraft:diamond_sword",
-    "IRON_PICKAXE": "minecraft:iron_pickaxe",
-    "DIAMOND_PICKAXE": "minecraft:diamond_pickaxe",
-    "BOW": "minecraft:bow",
-    "ARROW": "minecraft:arrow",
-    "SHIELD": "minecraft:shield",
-    "COAL": "minecraft:coal",
-    "DIAMOND": "minecraft:diamond",
-    "IRON_INGOT": "minecraft:iron_ingot",
-    "GOLD_INGOT": "minecraft:gold_ingot",
-    "STICK": "minecraft:stick",
-    "BOWL": "minecraft:bowl",
-    "STRING": "minecraft:string",
-    "FEATHER": "minecraft:feather",
-    "GUNPOWDER": "minecraft:gunpowder",
-    "WHEAT_SEEDS": "minecraft:wheat_seeds",
-    "WHEAT": "minecraft:wheat",
-    "FLINT": "minecraft:flint",
-    "APPLE": "minecraft:apple",
-    "BREAD": "minecraft:bread",
-    "PORKCHOP": "minecraft:porkchop",
-    "COOKED_PORKCHOP": "minecraft:cooked_porkchop",
-    "BUCKET": "minecraft:bucket",
-    "WATER_BUCKET": "minecraft:water_bucket",
-    "LAVA_BUCKET": "minecraft:lava_bucket",
-    "BOOK": "minecraft:book"
+  "entity_properties": {
+    "WIDTH": "width",
+    "HEIGHT": "height",
+    "CLASSIFICATION": "classification",
+    "ATTRIBUTES": "attributes",
+    "AI_GOALS": "ai_goals"
   },
-  "vanilla_effects": {
-    "SPEED": "minecraft:speed",
-    "SLOWNESS": "minecraft:slowness",
-    "HASTE": "minecraft:haste",
-    "MINING_FATIGUE": "minecraft:mining_fatigue",
-    "STRENGTH": "minecraft:strength",
-    "INSTANT_HEALTH": "minecraft:instant_health",
-    "INSTANT_DAMAGE": "minecraft:instant_damage",
-    "JUMP_BOOST": "minecraft:jump_boost",
-    "NAUSEA": "minecraft:nausea",
-    "REGENERATION": "minecraft:regeneration",
-    "RESISTANCE": "minecraft:resistance",
-    "FIRE_RESISTANCE": "minecraft:fire_resistance",
-    "WATER_BREATHING": "minecraft:water_breathing",
-    "INVISIBILITY": "minecraft:invisibility",
-    "BLINDNESS": "minecraft:blindness",
-    "NIGHT_VISION": "minecraft:night_vision",
-    "HUNGER": "minecraft:hunger",
-    "WEAKNESS": "minecraft:weakness",
-    "POISON": "minecraft:poison",
-    "WITHER": "minecraft:wither",
-    "HEALTH_BOOST": "minecraft:health_boost",
-    "ABSORPTION": "minecraft:absorption",
-    "SATURATION": "minecraft:saturation",
-    "GLOWING": "minecraft:glowing",
-    "LEVITATION": "minecraft:levitation",
-    "LUCK": "minecraft:luck",
-    "UNLUCK": "minecraft:unluck",
-    "SLOW_FALLING": "minecraft:slow_falling",
-    "CONDUIT_POWER": "minecraft:conduit_power",
-    "DOLPHINS_GRACE": "minecraft:dolphins_grace",
-    "BAD_OMEN": "minecraft:bad_omen",
-    "HERO_OF_THE_VILLAGE": "minecraft:hero_of_the_village"
+  "entity_classifications": {
+    "MONSTER": "monster",
+    "CREATURE": "creature",
+    "AMBIENT": "ambient",
+    "WATER_CREATURE": "water_creature",
+    "MISC": "misc"
+  },
+  "entity_attributes": {
+    "MAX_HEALTH": "max_health",
+    "MOVEMENT_SPEED": "movement_speed",
+    "ATTACK_DAMAGE": "attack_damage",
+    "FOLLOW_RANGE": "follow_range"
+  },
+  "ai_goals": {
+    "FLOAT": "float",
+    "MELEE_ATTACK": "melee_attack",
+    "WANDER": "wander",
+    "LOOK_AT_PLAYER": "look_at_player",
+    "LOOK_RANDOMLY": "look_randomly",
+    "TARGET_NEAREST_PLAYER": "target_nearest_player"
+  },
+  "ai_goal_properties": {
+    "GOAL": "goal",
+    "PRIORITY": "priority",
+    "SPEED": "speed",
+    "LONG_MEMORY": "long_memory",
+    "RADIUS": "radius"
+  },
+  "dimension_properties": {
+    "GENERATOR_TYPE": "generator_type",
+    "NOISE_SETTINGS": "noise_settings",
+    "DEFAULT_BLOCK": "default_block",
+    "DEFAULT_FLUID": "default_fluid",
+    "BIOME_EFFECTS": "biome_effects",
+    "MOB_SPAWNS": "mob_spawns",
+    "SEA_LEVEL": "sea_level",
+    "BED_WORKS": "bed_works"
+  },
+  "generator_types": {
+    "NOISE": "noise",
+    "VOID": "void"
+  },
+  "noise_settings": {
+    "OVERWORLD": "minecraft:overworld",
+    "NETHER": "minecraft:nether",
+    "END": "minecraft:end",
+    "CAVES": "minecraft:caves",
+    "FLOATING_ISLANDS": "minecraft:floating_islands"
+  },
+  "biome_effects": {
+    "SKY_COLOR": "sky_color",
+    "FOG_COLOR": "fog_color",
+    "WATER_COLOR": "water_color",
+    "WATER_FOG_COLOR": "water_fog_color",
+    "GRASS_COLOR": "grass_color",
+    "FOLIAGE_COLOR": "foliage_color"
+  },
+  "mob_spawn_properties": {
+    "TYPE": "type",
+    "WEIGHT": "weight",
+    "MIN_COUNT": "minCount",
+    "MAX_COUNT": "maxCount"
   }
 }
 
