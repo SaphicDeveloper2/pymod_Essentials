@@ -1,0 +1,2 @@
+[console_scripts]
+pymod-compiler = pylib_essentials.compiler:main
