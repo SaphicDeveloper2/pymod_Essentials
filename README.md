@@ -3,9 +3,11 @@
 
 *A compiler and utility library for creating Pymods for Minecraft Forge (and later Fabric).*
 
-PyLib Essentials is designed to make **Python modding for Minecraft** simple and universal. The goal is to keep Python code portable so that **Pymods work across multiple mod loaders** with minimal changes.
+PyLib Essentials makes **Python modding for Minecraft** simple and universal. The goal is to keep Python code portable so that **Pymods work across multiple mod loaders** with minimal changes.
 
 This package provides a **development toolkit** for modders using the [PyLib Java mod]().
+
+---
 
 ## Features
 
@@ -16,23 +18,53 @@ This package provides a **development toolkit** for modders using the [PyLib Jav
 
 ---
 
-## Installation
+## Installation (Recommended)
 
-You can install PyLib Essentials via pip:
+Download the latest **`.whl` file** from the [Releases](https://github.com/SaphicDeveloper/pymod_Essentials/releases) page, then install with:
 
 ```bash
-pip install .
+pip install path/to/pylib_essentials-x.y.z-py3-none-any.whl
 ```
 
-*(Run this from the directory containing `setup.py`.)*
+*(Replace `x.y.z` with the actual version number.)*
+
+---
+
+## Building From Source (For Contributors)
+
+If you want to modify or contribute to PyLib Essentials:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/SaphicDeveloper/pylib.git
+   cd pylib/pylib_essentials
+   ```
+
+2. Install in editable/development mode:
+
+   ```bash
+   pip install -e .
+   ```
+
+3. To build your own `.whl` and source distribution:
+
+   ```bash
+   python setup.py sdist bdist_wheel
+   ```
+
+4. Your files will be created in the `dist/` directory.
+   You can test install them locally with:
+
+   ```bash
+   pip install dist/pylib_essentials-x.y.z-py3-none-any.whl
+   ```
 
 ---
 
 ## Usage
 
 ### 1. Project Structure
-
-Organize your Pymod with the following layout:
 
 ```
 my_awesome_mod/
@@ -43,8 +75,6 @@ my_awesome_mod/
 ```
 
 ### 2. `pymod.json`
-
-This file is required at the root of your project:
 
 ```json
 {
@@ -57,8 +87,6 @@ This file is required at the root of your project:
 ```
 
 ### 3. Writing Your Mod
-
-In your Python scripts, import the provided mappings for clean autocompletion:
 
 ```python
 # src/main.py
@@ -80,14 +108,12 @@ pylib.registries.items.register(
 
 ### 4. Compiling
 
-Navigate to your project’s root directory and run:
-
 ```bash
 pymod-compiler
 ```
 
-This will generate a `.pymod` file inside a new `build/` directory.
-Drop the `.pymod` file into the `Pymods/` folder in your Minecraft instance, and you’re ready to play!
+This creates a `.pymod` file inside a new `build/` directory.
+Drop it into the `Pymods/` folder in your Minecraft instance to load it.
 
 ---
 
@@ -98,4 +124,9 @@ Drop the `.pymod` file into the `Pymods/` folder in your Minecraft instance, and
 * [ ] Advanced compiler options
 * [ ] Example pymod templates
 
+---
+
+## License
+
+PyLib Essentials is licensed under the **MIT License**.
 
