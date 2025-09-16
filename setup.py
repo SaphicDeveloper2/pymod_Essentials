@@ -8,7 +8,7 @@ with open(os.path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='pylib_essentials',
-    version='0.2.1', # Bumped version for the fix
+    version='0.2.2', # Bumped version for the fix
     packages=find_packages(),
     include_package_data=True,
     package_data={
