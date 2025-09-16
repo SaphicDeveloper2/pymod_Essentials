@@ -1,0 +1,30 @@
+End-User License Agreement (EULA) for the Pylib Ecosystem
+ Last Updated: 16 September 2025
+This End-User License Agreement (“EULA”) is a legal agreement between you (“You”, “Your”, the “User”) and SaphicDeveloper (“We”, “Us”, “The Author”).
+This EULA governs your use of all related software, including but not limited to the Pylib loader mod, the Pymodessentials compiler library, and any associated tools and documentation (collectively, “The Software”).
+By downloading, installing, copying, or otherwise using The Software, You agree to be bound by the terms of this EULA. If You do not agree, do not use The Software.
+License Grant
+ The Author grants You a personal, non-exclusive, non-transferable, revocable license to use The Software for the purpose of creating, distributing, and playing Minecraft mods called Pymods or for creating compatible extensions to The Software itself called Addons.
+Definitions
+ Pymods are modifications, plugins, or content for Minecraft created using The Software.
+ Addons are modifications or extensions that interact directly with The Software via the documented API or hooks, but are not standalone Minecraft mods.
+Creator Content and Ownership
+ You retain full ownership and all intellectual property rights to the Pymods You create. We claim no ownership over Your Pymods. For Addons, You retain ownership of Your original work but acknowledge that Addons are dependent on The Software. Addons must comply with the restrictions set forth later in this agreement.
+Monetisation Policy
+ We want to empower creators to be rewarded for their work while keeping the ecosystem open and accessible. You may earn revenue from Your Pymods through methods that do not restrict access to the mod itself. This includes voluntary donations through platforms such as Patreon, Ko-fi, or GitHub Sponsors, participation in official creator revenue programs on mod hosting platforms such as CurseForge, Modrinth, or the official Pymod platform, and offering optional early access or supporter rewards provided that the full release of the Pymod is eventually free to the public.
+You may not require direct payment in exchange for a .pymod file, place the .pymod file or access to it behind a hard paywall, or sell access to servers or services that are required to use the mod’s primary features.
+Content and Usage Restrictions
+ The Pylib ecosystem is intended to be a safe, fair, and welcoming space, consistent with Minecraft community standards. You may not create, distribute, or promote Pymods or Addons containing explicit, pornographic, obscene, or sexually suggestive material, excessive violence or gore beyond the scope of vanilla Minecraft, or hate speech, harassment, or content promoting discrimination.
+You may not create, distribute, or promote Pymods designed to provide unfair advantages in multiplayer gameplay such as x-ray, aimbots, speed hacks, or combat exploits. The Author reserves the right, at sole discretion, to determine violations of this section. Pymods or Addons found in violation may be reported to hosting platforms for removal, and Users may have their license revoked.
+General Restrictions and API Usage
+ You may not rent, lease, or lend The Software. You may not reverse-engineer, decompile, or disassemble the closed-source components of The Software such as the Pylib loader mod. You may use the publicly documented API and hooks to develop Addons, provided they interact with The Software in its intended manner. Open-source components of The Software may be used, forked, or redistributed under their respective open-source licenses.
+Disclaimer of Warranty
+ The Software is provided “AS IS”, without warranty of any kind, express or implied.
+Limitation of Liability
+ In no event shall The Author be liable for any damages, claims, or liabilities, whether in contract, tort, or otherwise, arising from or in connection with The Software or Your use of it.
+Termination
+ This EULA and the license granted hereunder will terminate automatically if You fail to comply with its terms and conditions. Upon termination, You must cease all use of The Software.
+Updates to this EULA
+ The Author reserves the right to update or modify this EULA at any time. Continued use of The Software after changes constitutes acceptance of the revised EULA.
+Governing Law
+ This EULA shall be governed by and construed in accordance with the laws of England and Wales. Any disputes arising under this EULA shall be subject to the exclusive jurisdiction of the courts of England and Wales.
