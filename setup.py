@@ -8,10 +8,11 @@ with open(os.path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='pylib_essentials',
-    version='0.2.3', # Bumped version for the fix
+    version='0.2.2', # Bumped version for the fix
     packages=find_packages(),
     include_package_data=True,
     package_data={
+        # This line ensures mappings.json is included in the pylib_essentials package.
         'pylib_essentials': ['mappings.json'],
     },
     author='SaphicDeveloper',
@@ -20,15 +21,11 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/SaphicDeveloper/pylib',
-    # --- FIX ---
-    # Updated to the modern, standardized license format.
     license="MIT",
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'Programming Language :: Python :: 3',
-        # This classifier is no longer needed as the `license` keyword is now used
-        # 'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Topic :: Software Development :: Build Tools',
         'Topic :: Games/Entertainment'
