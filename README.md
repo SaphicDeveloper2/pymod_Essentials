@@ -220,4 +220,3 @@ PyLib auto-generates the JSON files and writes a full datapack.
 🎉 **Happy modding with Python in Minecraft!**
 *(Fabric and newer Minecraft version support are on the way — stay tuned!)*
 
-Do you want me to make the **roadmap table version-specific** (like Forge 1.16.5 = ✅, Forge 1.18.x = planned, Fabric 1.20.x = planned), or keep it more **generic** so you don’t need to update it every time a new Minecraft version drops?
